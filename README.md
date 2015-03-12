@@ -17,3 +17,8 @@ I am relying on the native libraries to throw an error if the format is malforme
 However we can still try to see if given the same input the ImportExport will export the same json code. We are going to parse both result to ruby object and see if they are the same.
 I have picked only two line of the csv file as the input. I have formated the expected json response to a valid json data structure. Now i can run my rspec test very easily to tell me if my code is generated the expected result.
 
+## USAGE
+```
+bundle install
+ImportExport.export("./spec/fixtures/input.csv","json")
+```
